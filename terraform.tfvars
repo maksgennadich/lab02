@@ -1,0 +1,14 @@
+secret_key       = "neGPy/xRSM2xF/KrFU7vEg"
+access_key       = "MShcherbachenko:mshcherbachenko@sales.croc.ru"
+public_key       = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJDBcvNjEys0jkAZixtEbuyZ5Qxq8cIPdBY55XQTpLOP mac-astra"
+pubkey_name      = "My SSH Key"
+bucket_name      = "s3-demo2"
+az               = "ru-msk-vol51"
+eips_count       = 1
+vms_count        = 2
+hostnames        = ["webapp", "db"]
+allow_tcp_ports  = [22, 80, 443]
+vm_template      = "cmi-2C632E61"
+vm_instance_type = "m5gl20.small"
+vm_volume_type   = "gp2"
+vm_volume_size   = 32
