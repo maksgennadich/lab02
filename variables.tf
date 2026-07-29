@@ -1,15 +1,3 @@
-variable "secret_key" {
-  description = "Enter the secret key"
-}
-
-variable "access_key" {
-  description = "Enter the access key"
-}
-
-variable "public_key" {
-  description = "Enter the public SSH key"
-}
-
 variable "pubkey_name" {
   description = "Enter the name of the public SSH key"
 }
@@ -62,4 +50,8 @@ variable "vm_volume_size" {
   # Для других типов дисков они могут быть иными — подробнее см. в документации на диски
   description = "Enter the volume size for VM disks (32 by default, in GiB, must be multiple of 8)"
   default     = 32
+}
+
+variable "fortivpn_cidrs" {
+  type = list(string)
 }
